@@ -1,1 +1,146 @@
-coming
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="author" content="Vitaliy Potapov">
+        <meta http-equiv="cache-control" content="max-age=0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+        <meta http-equiv="pragma" content="no-cache">
+
+        <title>Libre Objet Project Template Generator</title>
+
+        <script src="assets/js/jquery-1.js"></script>
+        <script src="assets/js/jquery_002.js"></script>
+
+        <!-- momentjs -->
+        <script src="assets/js/moment.js"></script>
+
+        <!-- select2 -->
+        <link href="assets/css/select2.css" rel="stylesheet">
+        <script src="assets/js/select2.js"></script>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+        <!-- poshytip -->
+        <link href="assets/css/tip-yellowsimple.css" rel="stylesheet">
+        <script src="assets/js/jquery.js"></script>
+
+        <!-- jqueryui dateicker -->
+        <link href="assets/css/jquery-ui-1.css" rel="stylesheet">
+        <script src="assets/js/jquery-ui-1.js"></script>
+
+        <!-- x-editable (jquery) -->
+        <link href="assets/css/jquery-editable.css" rel="stylesheet">
+        <script src="assets/js/jquery-editable-poshytip.js"></script>
+
+        <link href="assets/css/demo.css" rel="stylesheet">
+
+        <script>
+        var f = 'plain';
+        </script>
+
+        <!-- address input -->
+        <link href="assets/css/address.css" rel="stylesheet">
+        <script src="assets/js/address.js"></script>
+
+        <style type="text/css">
+            body {
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+
+            table.table > tbody > tr > td {
+                height: 30px;
+                vertical-align: middle;
+            }
+        </style>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/socialwidgets.css">
+    <style id="poshytip-css-tip-yellowsimple" type="text/css">div.tip-yellowsimple{visibility:hidden;position:absolute;top:0;left:0;}div.tip-yellowsimple table.tip-table, div.tip-yellowsimple table.tip-table td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;}div.tip-yellowsimple td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:10px;width:10px;overflow:hidden;}div.tip-yellowsimple td.tip-right{background-position:100% 0;}div.tip-yellowsimple td.tip-bottom{background-position:100% 100%;}div.tip-yellowsimple td.tip-left{background-position:0 100%;}div.tip-yellowsimple div.tip-inner{background-position:-10px -10px;}div.tip-yellowsimple div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}</style></head>
+
+    <body>
+
+        <div style="width: 80%; margin: auto;">
+            <h1>Project Description</h1>
+
+            <div style="float: right; margin-bottom: 10px">
+            <label style="display: inline-block; margin-right: 50px"><input id="autoopen" style="vertical-align: baseline" type="checkbox">&nbsp;auto-open next field</label>
+            <button id="enable" class="btn btn-default">enable / disable</button>
+            </div>
+            <p>Click to edit</p>
+            <table id="user" class="table table-bordered table-striped" style="clear: both">
+                <tbody>
+                    <tr>
+                        <td width="35%">Object name</td>
+                        <td width="65%"><a href="#" id="object_name" data-type="text" data-pk="1" data-title="Enter a unique object name" class="editable editable-click">Bouctje</a></td>
+                    </tr>
+                    <tr>
+                        <td>Empty text field, required</td>
+                        <td><a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname" class="editable editable-click editable-empty">Empty</a></td>
+                    </tr>
+                    <tr>
+                        <td>Select, local array, custom display</td>
+                        <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray;">not selected</a></td>
+                    </tr>
+                    <tr>
+                        <td>Select, remote array, no buttons</td>
+                        <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group" class="editable editable-click">Admin</a></td>
+                    </tr>
+                    <tr>
+                        <td>Datepicker</td>
+                        <td>
+                        <a href="#" id="vacation" data-type="date" data-viewformat="yyyy-mm-dd" data-pk="1" data-placement="right" data-title="When was the object created?" class="editable editable-click">2012-12-28</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Textarea, buttons below. Submit by <i>ctrl+enter</i></td>
+                        <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">awesome
+user!</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Checklist</td>
+                        <td><a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits" class="editable editable-click">peach<br>apple</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Select2 (tags mode)</td>
+                        <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags" class="editable editable-click">html, javascript</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Select2 (dropdown mode)</td>
+                        <td><a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country" class="editable editable-click">Bahamas</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Custom input, several fields</td>
+                        <td><a href="#" id="address" data-type="address" data-pk="1" data-title="Please, fill address" class="editable editable-click"><b>Moscow</b>, Lenina st., bld. 12</a></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+            <div style="float: left; width: 100%">
+                <h3>Console <small>(all ajax requests here are emulated)</small></h3>
+                <div><textarea id="console" class="form-control" rows="8" style="width: 100%" autocomplete="off"></textarea></div>
+            </div>
+
+            <footer class="footer" style="clear: both; padding-top: 10px">
+                <hr>
+                <p>Adapted from <a href="http://vitalets.github.com/x-editable">X-editable</a> © Vitaliy Potapov 2012. Released under the MIT license.</p>
+            </footer>
+
+        </div>
+
+        <script src="assets/js/demo-mock.js"></script>
+        <script src="assets/js/demo.js"></script>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
