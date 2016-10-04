@@ -45,8 +45,8 @@
         </script>
 
         <!-- address input -->
-        <link href="assets/css/address.css" rel="stylesheet">
-        <script src="assets/js/address.js"></script>
+        <link href="assets/css/overall_size.css" rel="stylesheet">
+        <script src="assets/js/overall_size.js"></script>
 
         <style type="text/css">
             body {
@@ -80,50 +80,81 @@
                         <td width="65%"><a href="#" id="object_name" data-type="text" data-pk="1" data-title="Enter a unique object name" class="editable editable-click">Bouctje</a></td>
                     </tr>
                     <tr>
-                        <td>Empty text field, required</td>
-                        <td><a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname" class="editable editable-click editable-empty">Empty</a></td>
+                        <td>Designer·s</td>
+                        <td><a href="#" id="designer" data-type="text" data-pk="1" data-title="Enter designer·s full name·s (separated by a comma)" class="editable editable-click">Julien Deswaef, Mathieu Gabiot, Martin Lévêque</a></td>
                     </tr>
                     <tr>
-                        <td>Select, local array, custom display</td>
-                        <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray;">not selected</a></td>
+                        <td>Builder·s</td>
+                        <td><a href="#" id="builder" data-type="text" data-pk="1" data-title="Enter builder·s full name·s (separated by a comma)" class="editable editable-click">Libre Objet</a></td>
                     </tr>
                     <tr>
-                        <td>Select, remote array, no buttons</td>
-                        <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group" class="editable editable-click">Admin</a></td>
+                        <td>Category</td>
+                        <td><a href="#" id="category" data-type="select2" data-pk="1" data-title="Enter a category (create your own or select from available)" class="editable editable-click">showcase</a></td>
                     </tr>
                     <tr>
-                        <td>Datepicker</td>
+                        <td>Tags</td>
+                        <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags (create your own or select from available)" class="editable editable-click">wood, book</a></td>
+                    </tr>
+                    <tr>
+                        <td>Overall size</td>
+                        <td><a href="#" id="overall_size" data-type="overall_size" data-pk="1" data-title="Bounding box of your object (length x width x height)" class="editable editable-click">0 x 0 x 0 mm</a></td>
+                    </tr>
+                    <tr>
+                        <td>Creation date</td>
                         <td>
-                        <a href="#" id="vacation" data-type="date" data-viewformat="yyyy-mm-dd" data-pk="1" data-placement="right" data-title="When was the object created?" class="editable editable-click">2012-12-28</a>
+                        <a href="#" id="creation_date" data-type="date" data-viewformat="yyyy-mm-dd" data-pk="1" data-placement="right" data-title="When was the object created?" class="editable editable-click">2012-12-28</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>Textarea, buttons below. Submit by <i>ctrl+enter</i></td>
-                        <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">awesome
-user!</a></td>
+                        <td>Contributor·s</td>
+                        <td><a href="#" id="contributor" data-type="text" data-pk="1" data-title="Enter contributor·s full name·s (separated by a comma)" class="editable editable-click"></a></td>
                     </tr>
-
                     <tr>
-                        <td>Checklist</td>
-                        <td><a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits" class="editable editable-click">peach<br>apple</a></td>
+                        <td>Derived from</td>
+                        <td><a href="#" id="derived_from" data-type="text" data-pk="1" data-title="Enter the name·s of the object·s it was derived from (in case of remixes)" class="editable editable-click"></a></td>
                     </tr>
-
                     <tr>
-                        <td>Select2 (tags mode)</td>
-                        <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags" class="editable editable-click">html, javascript</a></td>
+                        <td>Original designer</td>
+                        <td><a href="#" id="original_designer" data-type="text" data-pk="1" data-title="Enter the name·s of the previous designer·s (in case of remixes)" class="editable editable-click"></a></td>
                     </tr>
-
                     <tr>
-                        <td>Select2 (dropdown mode)</td>
-                        <td><a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country" class="editable editable-click">Bahamas</a></td>
+                        <td>Realization place</td>
+                        <td><a href="#" id="realization_place" data-type="text" data-pk="1" data-title="Enter the location where the object was created" class="editable editable-click">Brussels, Belgium</a></td>
                     </tr>
-
                     <tr>
-                        <td>Custom input, several fields</td>
-                        <td><a href="#" id="address" data-type="address" data-pk="1" data-title="Please, fill address" class="editable editable-click"><b>Moscow</b>, Lenina st., bld. 12</a></td>
+                        <td>Required hardware</td>
+                        <td><a href="#" id="required_hardware" data-type="select2" data-pk="1" data-title="Enter the tools necessary for construction (create your own or select from available)" class="editable editable-click">drill, saw, hammer</a></td>
                     </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td><a href="#" id="materials" data-type="select2" data-pk="1" data-title="List of materials for construction (create your own or select from available)" class="editable editable-click">board, nails, glue</a></td>
+                    </tr>
+                    <tr>
+                        <td>License</td>
+                        <td><a href="#" id="license" data-type="select2" data-pk="1" data-value="FAL" data-title="Select an open source license" class="editable editable-click">Free Art License</a></td>
+                    </tr>
+                    <tr>
+                        <td>Client</td>
+                        <td><a href="#" id="client" data-type="text" data-pk="1" data-title="Enter the name of your client (if your object was commisioned)" class="editable editable-click">Libre Objet</a></td>
+                    </tr>
+                    <tr>
+                        <td>Url</td>
+                        <td><a href="#" id="url" data-type="url" data-pk="1" data-title="Enter the canonical URL for your source files and documentation " class="editable editable-click"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>
+                          <a href="#" id="description" data-type="textarea" data-pk="1" data-placeholder="Write freely about your project (use CTRL+ENTER for carriag return)" data-title="Be descriptive about your intentions and choices." class="editable editable-pre-wrapped editable-click">Write freely about the object.
+Be descriptive about your intentions and choices.
 
+You might want to answer questions like:
+ - Why was it created?
+ - For what purpose?
+ - How is it best used or done?
 
+In case of derivatives, what is different from the previous versions? etc.</a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
 
