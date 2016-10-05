@@ -8,7 +8,7 @@
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
         <meta http-equiv="pragma" content="no-cache">
 
-        <title>Libre Objet Project Template Generator</title>
+        <title>Libre Objet - Project Description Generator</title>
 
         <script src="assets/js/jquery-1.js"></script>
         <script src="assets/js/jquery_002.js"></script>
@@ -41,6 +41,7 @@
         <link href="assets/css/demo.css" rel="stylesheet">
 
         <script>
+
         var f = 'plain';
         </script>
 
@@ -50,34 +51,35 @@
 
         <style type="text/css">
             body {
-                padding-top: 50px;
+                padding-top: 20px;
                 padding-bottom: 30px;
-            }
-
-            table.table > tbody > tr > td {
-                height: 30px;
-                vertical-align: middle;
             }
         </style>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/socialwidgets.css">
+        <link href="assets/css/print.css" rel="stylesheet" media="print">
+
     <style id="poshytip-css-tip-yellowsimple" type="text/css">div.tip-yellowsimple{visibility:hidden;position:absolute;top:0;left:0;}div.tip-yellowsimple table.tip-table, div.tip-yellowsimple table.tip-table td{margin:0;font-family:inherit;font-size:inherit;font-weight:inherit;font-style:inherit;font-variant:inherit;}div.tip-yellowsimple td.tip-bg-image span{display:block;font:1px/1px sans-serif;height:10px;width:10px;overflow:hidden;}div.tip-yellowsimple td.tip-right{background-position:100% 0;}div.tip-yellowsimple td.tip-bottom{background-position:100% 100%;}div.tip-yellowsimple td.tip-left{background-position:0 100%;}div.tip-yellowsimple div.tip-inner{background-position:-10px -10px;}div.tip-yellowsimple div.tip-arrow{visibility:hidden;position:absolute;overflow:hidden;font:1px/1px sans-serif;}</style></head>
 
     <body>
 
         <div style="width: 80%; margin: auto;">
-            <h1>Project Description</h1>
-
-            <div style="float: right; margin-bottom: 10px">
-            <label style="display: inline-block; margin-right: 50px"><input id="autoopen" style="vertical-align: baseline" type="checkbox">&nbsp;auto-open next field</label>
-            <button id="enable" class="btn btn-default">enable / disable</button>
-            </div>
-            <p>Click to edit</p>
-            <table id="user" class="table table-bordered table-striped" style="clear: both">
+          <header class="no-print">
+            <h1>Project Description Generator</h1>
+            <p>
+              This template is here to help you fill the form to document your libre objects<br>
+              Hit the print button on your browser to save a paper copy.<br>
+              This template should be improved? Find the code for it on <a href="https://github.com/libreobjet/project-generator">Github and suggest changes</a>.<br>
+            </p>
+          </header>
+          <div class="no-print" style="float: right; margin-bottom: 10px; width: 65%">
+            <span>Click to edit</span>
+            <label style="display: inline-block; margin-right: 50px;"><input id="autoopen" style="vertical-align: baseline" type="checkbox">&nbsp;auto-open next field</label>
+          </div>
+          <table id="project-sheet" class="table table-bordered table-striped" style="clear: both">
                 <tbody>
                     <tr>
-                        <td width="35%">Object name</td>
-                        <td width="65%"><a href="#" id="object_name" data-type="text" data-pk="1" data-title="Enter a unique object name" class="editable editable-click">Bouctje</a></td>
+                        <td>Object name</td>
+                        <td><a href="#" id="object_name" data-type="text" data-pk="1" data-title="Enter a unique object name" class="editable editable-click">Bouctje</a></td>
                     </tr>
                     <tr>
                         <td>Designer·s</td>
@@ -127,6 +129,7 @@
                     </tr>
                     <tr>
                         <td>Materials</td>
+
                         <td><a href="#" id="materials" data-type="select2" data-pk="1" data-title="List of materials for construction (create your own or select from available)" class="editable editable-click">board, nails, glue</a></td>
                     </tr>
                     <tr>
@@ -158,14 +161,14 @@ In case of derivatives, what is different from the previous versions? etc.</a>
                 </tbody>
             </table>
 
-            <div style="float: left; width: 100%">
+            <div class="no-print" style="float: left; width: 100%">
                 <h3>Console <small>(all ajax requests here are emulated)</small></h3>
                 <div><textarea id="console" class="form-control" rows="8" style="width: 100%" autocomplete="off"></textarea></div>
             </div>
 
-            <footer class="footer" style="clear: both; padding-top: 10px">
+            <footer class="footer no-print" style="clear: both; padding-top: 10px">
                 <hr>
-                <p>Adapted from <a href="http://vitalets.github.com/x-editable">X-editable</a> © Vitaliy Potapov 2012. Released under the MIT license.</p>
+                <p class="">Adapted from <a href="http://vitalets.github.com/x-editable">X-editable</a> © Vitaliy Potapov 2012. Released under the MIT license.</p>
             </footer>
 
         </div>
