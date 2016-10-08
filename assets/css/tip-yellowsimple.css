@@ -1,3 +1,29 @@
+
+@font-face {
+  font-family: 'Raleway-Heavy';
+  src: url('Raleway/Raleway-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .tip-yellowsimple {
 	z-index:1000;
 	text-align:left;
@@ -15,7 +41,7 @@
 	 */
 }
 .tip-yellowsimple .tip-inner {
-	font-family: 'RalewayRegular';
+	font-family: 'Raleway-Medium';
 	font-size: 10pt;
 }
 

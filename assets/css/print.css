@@ -1,39 +1,73 @@
 @media print {
+body > div {
+  width: 90% !important;
+    }
+
+@font-face {
+    font-family: 'Raleway-Heavy';
+    src: url('Raleway/Raleway-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('Raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('Raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 .no-print { display: none }
 
-@import url(//fontlibrary.org/face/raleway);
-
-body > div { width: 100% !important; font-family: 'RalewayRegular';}
 
 a.editable-click,
 a.editable-click:hover {
   /* color: black; */
-  text-decoration: none;
   border-bottom: none;
 }
+
+#project-sheet > tbody > tr > td {
+    height: 5px;
+    text-align: left;
+    padding:0;
+}
+
 
 .editable-empty {
   display: none !important;
 }
 
-#project-sheet {
-  font-family: 'RalewayRegular' !important;
-}
-
 #project-sheet > tbody > tr > td:nth-child(1) {
   text-align: right;
-  padding-right: 15px;
-  font-family: 'RalewayRegular' !important;
+  font-family: 'Raleway-Medium';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
   font-size: 7pt;
   color:#000;
+  margin-left: 20px;
 }
 
 
 #project-sheet > tbody > tr > td:nth-child(2) > a {
-  border-bottom: solid 2px #247940;
-  font-family: 'RalewayBold' !important;
-  color:#247940;
-  font-size: 7pt;
+  font-family: 'Raleway-Bold';
+  font-style: normal;
+  font-weight: normal;
   text-decoration: none;
+  color:#247940;
+  font-size: 10pt;
 }
+
 }

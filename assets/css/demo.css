@@ -1,8 +1,32 @@
 
+@font-face {
+  font-family: 'Raleway-Heavy';
+  src: url('Raleway/Raleway-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-size: 12px;
-  font-family: 'RalewayRegular';
+  font-family: 'Raleway-Medium';
 }
 
 #project-sheet {
@@ -22,15 +46,16 @@ body {
 #project-sheet > tbody > tr > td:nth-child(1) {
   color: #333;
   text-align: right;
+  padding-top: 19px;
   padding-right: 15px;
-  font-family: 'RalewayBold';
+  font-family: 'Raleway-Bold';
   color:#247940;
 }
 
 /* Data */
 #project-sheet > tbody > tr > td:nth-child(2) {
   border-bottom: solid 2px #247940;
-  padding-left: 15px;
+  padding-left: 10px;
   font-size: 13pt;
 }
 
@@ -44,7 +69,7 @@ body {
 }
 h1 {
   margin-left: 20%;
-  font-family: 'RalewayBlack';
+  font-family: 'Raleway-Heavy';
   text-transform: uppercase;
   letter-spacing: 3px;
   color:#247940;

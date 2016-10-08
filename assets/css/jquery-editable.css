@@ -2,6 +2,33 @@
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
+
+@font-face {
+  font-family: 'Raleway-Heavy';
+  src: url('Raleway/Raleway-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('Raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .editableform {
     margin-bottom: 0; /* overwrites bootstrap margin */
 }
@@ -36,7 +63,7 @@
 }
 
 .editable-input {
-    font-family: 'RalewayRegular';
+    font-family: 'Raleway-Medium';
     font-size: 10pt;
     vertical-align: top;
     display: inline-block; /* should be inline to take effect of parent's white-space: nowrap */
