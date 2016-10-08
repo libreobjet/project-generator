@@ -1,6 +1,9 @@
+@media print {
 .no-print { display: none }
 
-body > div {  width: 100% !important; }
+@import url(//fontlibrary.org/face/raleway);
+
+body > div { width: 100% !important; font-family: 'RalewayRegular';}
 
 a.editable-click,
 a.editable-click:hover {
@@ -10,15 +13,27 @@ a.editable-click:hover {
 }
 
 .editable-empty {
-  display: none;
+  display: none !important;
+}
+
+#project-sheet {
+  font-family: 'RalewayRegular' !important;
 }
 
 #project-sheet > tbody > tr > td:nth-child(1) {
-  color: #AADDDD;
+  text-align: right;
+  padding-right: 15px;
+  font-family: 'RalewayRegular' !important;
+  font-size: 7pt;
+  color:#000;
 }
 
 
 #project-sheet > tbody > tr > td:nth-child(2) > a {
-  color: #000000;
-  font-weight: bold;
+  border-bottom: solid 2px #247940;
+  font-family: 'RalewayBold' !important;
+  color:#247940;
+  font-size: 7pt;
+  text-decoration: none;
+}
 }

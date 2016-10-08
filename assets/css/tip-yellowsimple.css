@@ -1,15 +1,12 @@
 .tip-yellowsimple {
 	z-index:1000;
 	text-align:left;
-	border:1px solid #c7bf93;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
+	border:2px solid #247940;
 	padding:6px 8px;
 	min-width:50px;
 	max-width:300px;
 	color:#000;
-	background-color:#fff9c9;
+	background-color:#fff;
 	/**
 	 * - If you set a background-image, border/padding/background-color will be ingnored.
 	 *   You can set any padding to .tip-inner instead if you need.
@@ -18,7 +15,8 @@
 	 */
 }
 .tip-yellowsimple .tip-inner {
-	font:12px/16px arial,helvetica,sans-serif;
+	font-family: 'RalewayRegular';
+	font-size: 10pt;
 }
 
 /* Configure an arrow image - the script will automatically position it on the correct side of the tip */
