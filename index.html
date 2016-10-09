@@ -48,15 +48,16 @@
         <!-- address input -->
         <link href="assets/css/overall_size.css" rel="stylesheet">
         <script src="assets/js/overall_size.js"></script>
-
         <style type="text/css">
             body {
-                padding-top: 20px;
+                padding-top: 0px;
                 padding-bottom: 30px;
             }
         </style>
 
         <!--link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/raleway" type="text/css"/ -->
+        <!-- script to hide empty cells from http://jsfiddle.net/WHGGz/ Need to be adapted with "Empty" word -->
+        <script src="assets/js/script-print.js"></script>
 
         <link href="assets/css/print.css" rel="stylesheet" media="print">
 
@@ -100,7 +101,7 @@
                         <td>Tags</td>
                         <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags (create your own or select from available)" class="editable editable-click">wood, book</a></td>
                     </tr>
-                    <tr>
+                    <tr id="test">
                         <td>Overall size</td>
                         <td><a href="#" id="overall_size" data-type="overall_size" data-pk="1" data-title="Bounding box of your object (length x width x height)" class="editable editable-click">0 x 0 x 0 mm</a></td>
                     </tr>
@@ -163,12 +164,12 @@ In case of derivatives, what is different from the previous versions? etc.</a>
                     </tr>
                 </tbody>
             </table>
-            <div class="no-print" style="float: left; width: 100%">
+            <!-- <div class="no-print" style="float: left; width: 100%">
                 <h3>Console <small>(all ajax requests here are emulated)</small></h3>
                 <div><textarea id="console" class="form-control" rows="8" style="width: 100%" autocomplete="off"></textarea></div>
-            </div>
+            </div> -->
 
-            <footer class="footer no-print" style="clear: both; padding-top: 10px">
+            <footer class="footer no-print" style="clear: both; padding-top: 20px;">
                 <hr>
                 <p class="">Adapted from <a href="http://vitalets.github.com/x-editable">X-editable</a> © Vitaliy Potapov 2012. Released under the MIT license.</p>
             </footer>

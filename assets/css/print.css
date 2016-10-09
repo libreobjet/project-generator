@@ -16,6 +16,12 @@ body > div {
     font-style: normal;
 }
 @font-face {
+  font-family: 'Raleway-Regular';
+  src: url('Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
     font-family: 'Raleway-Bold';
     src: url('Raleway/Raleway-Bold.ttf') format('truetype');
     font-weight: normal;
@@ -37,37 +43,40 @@ a.editable-click:hover {
   /* color: black; */
   border-bottom: none;
 }
+table {
+  margin-top: 25px;
+}
 
 #project-sheet > tbody > tr > td {
-    height: 5px;
-    text-align: left;
-    padding:0;
+    height: 10px;
 }
 
 
 .editable-empty {
-  display: none !important;
+  display: none;
 }
 
 #project-sheet > tbody > tr > td:nth-child(1) {
-  text-align: right;
-  font-family: 'Raleway-Medium';
+  text-align: left;
+  font-family: 'Raleway-Regular';
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
-  font-size: 7pt;
-  color:#000;
+  font-size: 9pt;
+  color:#247940;
+  width: 25%;
   margin-left: 20px;
 }
 
 
 #project-sheet > tbody > tr > td:nth-child(2) > a {
-  font-family: 'Raleway-Bold';
+  font-family: 'Raleway-Medium';
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
-  color:#247940;
-  font-size: 10pt;
+  color:#000;
+  width: 75%;
+  font-size: 10.5pt;
 }
 
 }

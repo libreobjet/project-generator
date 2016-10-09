@@ -12,6 +12,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Raleway-Regular';
+  src: url('Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Raleway-Bold';
   src: url('Raleway/Raleway-Bold.ttf') format('truetype');
   font-weight: normal;
@@ -35,29 +41,38 @@ body {
 }
 
 #project-sheet > tbody > tr > td {
-    height: 30px;
-    vertical-align: top;
-    padding: 15px 3px 0px 3px;
-    font-size: 1.2em;
+    height: 35px;
     text-align: left;
 }
 
 /* label */
 #project-sheet > tbody > tr > td:nth-child(1) {
-  color: #333;
-  text-align: right;
-  padding-top: 19px;
-  padding-right: 15px;
-  font-family: 'Raleway-Bold';
+  text-align: left;
+  padding-right: 10px;
+  font-family: 'Raleway-Regular';
+  font-size: 13pt;
   color:#247940;
+  width: 20%;
+  border-right: solid 2px #247940;
 }
 
 /* Data */
 #project-sheet > tbody > tr > td:nth-child(2) {
   border-bottom: solid 2px #247940;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 13pt;
+  width: 80%;
 }
+/*#test {
+  background-color: yellow;
+}*/
+
+.no-print{
+  padding-bottom: 20px;
+}
+
 
 .muted {
    color: #999999;
@@ -69,14 +84,22 @@ body {
 }
 h1 {
   margin-left: 20%;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-family: 'Raleway-Heavy';
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color:#247940;
   font-size: 20pt;
+  text-align: center;
+  border-bottom: solid 2px #247940;
 }
 h2 {
  margin-top: 40px;
+}
+
+td{
+  vertical-align:middle;
 }
 
 hr {
@@ -102,4 +125,7 @@ span {
 }
 label {
   font-size: 10pt;
+}
+a {
+  color:#0036A9;
 }
